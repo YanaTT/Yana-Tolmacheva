@@ -1,21 +1,27 @@
 #include <stdio.h>
 
+
 int main()
 {
-int A,B;
-int f=0;
-printf("Введите число A: ");
-scanf ("%d" , &A);
-printf("Введите число B: ");
-scanf ("%d" , &B);
+int a,b;
+int x=0;
+printf("Введите значение a: ");
+scanf ("%d", &a);
+printf("Введите значение b: ");
+scanf ("%d", &b);
+
+if (a>=b)
+{
+printf("Условие не выпоняется.");
+}
+x=0;
+for(int i=a;i<=b;i++){
+x=i*3;
 FILE *output;
-output = fopen ("output","w");
-for (int i=A; i<=B; i++){
-f=i*3;
-fprintf (output, "%d\n",f);
+output=fopen ("output","x");
+fprintf (output,"%d\n",x);
+fclose (output);
 
 }
-fclose(output);
 return 0;
-
 }
