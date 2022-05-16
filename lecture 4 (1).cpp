@@ -4,7 +4,7 @@ using namespace std;
 int main ()
 {
 int a;
-char numbers [10][14] = {
+char numbers [10][8] = {
     "нуль", 
     "один",
     "два",
