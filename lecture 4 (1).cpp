@@ -17,7 +17,7 @@ char numbers [10][8] = {
     "девять"};
 cout << "Введите цифру от 0 до 9" <<"/n";
 cin >> a;
-cout << numbers[a]<< endl;
+cout << numbers[a]<< "/n";
 
 return 0;
 
