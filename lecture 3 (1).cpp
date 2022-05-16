@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-
 int main()
+
 {
 int a,b;
 int x=0;
@@ -10,18 +10,12 @@ scanf ("%d", &a);
 printf("Введите значение b: ");
 scanf ("%d", &b);
 
-if (a>=b)
-{
-printf("Условие не выпоняется.");
-}
-x=0;
+FILE *output;
+output=fopen ("output","w");
 for(int i=a;i<=b;i++){
 x=i*3;
-FILE *output;
-output=fopen ("output","x");
 fprintf (output,"%d\n",x);
-fclose (output);
-
 }
+fclose (output);
 return 0;
 }
