@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+class Oper{
+public:
+string a;
+Oper(string text){
+    a = text;
+}
+Oper operator-- (){
+	for(int i=0; i<7; i++){
+		a[i]--;
+		cout << a[i];
+	}
+	cout << endl;
+	return a;
+}
+Oper operator++ (){
+	for(int i=0; i<7; i++){
+		a[i]++;
+		cout << a[i];
+	}
+	cout << endl;
+	return a;
+}
+};
+int main(){
+    Oper text("abc123");
+    ++text;
+    --text;
+	return 0;	
+}
