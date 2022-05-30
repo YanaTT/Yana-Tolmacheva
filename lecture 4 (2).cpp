@@ -3,12 +3,14 @@ using namespace std;
 
 int main ()
 {
-char f[26];
+char f[7] = "abc123";
 char *k;
-cin>>f;
 k=f;
-for (*k=0; *k<=26; *k++);
-std::cout << f << std::endl;
+for (int t=0; t<=6; t++){
+(*k)++;
+k++;
+}
+cout << f;
 
 return 0;
 
