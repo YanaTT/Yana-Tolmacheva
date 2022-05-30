@@ -2,7 +2,7 @@
 using namespace std;
 
 void print (int f); 
-void print (float f);
+void print (double f);
 void print (char f);
 void print (int f, int c);
 
