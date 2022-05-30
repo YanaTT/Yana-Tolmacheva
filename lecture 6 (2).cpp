@@ -2,7 +2,7 @@
 using namespace std;
 
 void print (int f); 
-void print (double f);
+void print (float f);
 void print (char f);
 void print (int f, int c);
 
@@ -19,7 +19,7 @@ return 0;
 void print (int f){
 cout << f << "\n";
 }
-void print (double f){
+void print (float f){
 cout << f << "\n";
 }
 void print (char f){
