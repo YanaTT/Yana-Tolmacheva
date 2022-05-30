@@ -19,7 +19,7 @@ return 0;
 void print (int f){
 cout << f << "\n";
 }
-void print (float f){
+void print (double f){
 cout << f << "\n";
 }
 void print (char f){
