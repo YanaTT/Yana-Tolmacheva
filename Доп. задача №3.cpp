@@ -3,13 +3,14 @@
 //Продемонстрируйте работу функции, используя цикл
 
 #include <iostream>
+#include <math.h>
 using namespace std ;
 
 float Power(float a, int n)
 {
-float result;
-result=a*n;
-return result;
+float pow1;
+pow1=pow(a,n);
+return pow1;
 }
 
 int main ()
@@ -18,7 +19,7 @@ float a,n;
 cout << "Введите первое дробное число\n";
 cin >> a;
 cout<<"Введите второе целое число\n";
-cin>> n;
+cin>>n;
 cout << "Результат " << Power(a,n)<< "\n";
 return 0;
 }
