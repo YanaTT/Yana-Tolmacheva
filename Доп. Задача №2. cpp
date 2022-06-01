@@ -11,16 +11,19 @@ using namespace std;
 int main () {
 int ary[10];
 
-ifstream file ("digits.txt");
+FILE *f;
+f = fopen("digits.txt","w");
+ofstream fout ("digits.txt");
 
 for(int i=0;i<10;i++)
 {
 cin>>ary[i];
+fout << ary[i];
+
 if (ary[i]==ary[i-1]) {
 break;
 }
 }
-
-file.close();
+fclose(f);
 
 }
