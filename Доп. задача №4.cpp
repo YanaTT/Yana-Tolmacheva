@@ -19,7 +19,7 @@ for(int i=0; i<R; i++)
 for(int j=0; j<C; j++)
 cin>>Values[i][j];
 }
-void Value(int R, int C)
+range Value(int R, int C)
 {
 int t=Values[R-1][C-1];
 return;
